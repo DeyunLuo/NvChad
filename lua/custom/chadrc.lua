@@ -6,7 +6,7 @@ local M = {}
 -- example of changing theme:
 
 M.ui = {
-  theme = "monekai",
+  theme = "decay",
   -- theme = "chadracula",
 }
 
@@ -21,12 +21,8 @@ M.plugins = {
     ["williamboman/mason.nvim"] = plugin_confs.mason_nvim,
     ["kyazdani42/nvim-tree.lua"] = plugin_confs.nvimtree,
     ["neovim/nvim-lspconfig"] = plugin_confs.lspconfig,
-    -- ["neovim/nvim-lspconfig"] = {
-    --   config = function()
-    --     require "plugins.configs.lspconfig"
-    --     require "custom.plugins.lspconfig"
-    --   end,
-    -- },
+    ["jose-elias-alvarez/null-ls.nvim"] = plugin_confs.nullls,
+    ['mhinz/vim-startify'] = plugin_confs.vim_startify,
   }
 }
 
