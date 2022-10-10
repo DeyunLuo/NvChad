@@ -18,7 +18,6 @@ local plugin_confs = require "custom.plugins.configs"
 
 M.plugins = {
   user = {
-    ["williamboman/mason.nvim"] = plugin_confs.mason_nvim,
     ["kyazdani42/nvim-tree.lua"] = plugin_confs.nvimtree,
     ["neovim/nvim-lspconfig"] = plugin_confs.lspconfig,
     ["jose-elias-alvarez/null-ls.nvim"] = plugin_confs.nullls,

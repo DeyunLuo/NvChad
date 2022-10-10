@@ -1,22 +1,5 @@
 local M = {}
 
-M.mason_nvim = {
-	ensure_installed = {
-		-- lua stuff
-		"lua-language-server",
-		"stylua",
-		"clangd",
-		"clang-format",
-
-		-- shell
-		"shfmt",
-		"shellcheck",
-
-		"goimports",
-		"gopls",
-	},
-}
-
 M.nvimtree = {
 	git = {
 		enable = true,
@@ -42,7 +25,7 @@ M.nullls = {
 }
 
 M.vim_startify = {
-		require("custom.plugins.vim_startify")
+	require("custom.plugins.vim_startify"),
 }
 
 return M

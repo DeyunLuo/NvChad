@@ -28,10 +28,10 @@ M.nvimtree = {
 
 	n = {
 		-- toggle
-		["<C-n>"] = { "<cmd> NvimTreeToggle <CR>", "   toggle nvimtree" },
+		-- ["<C-n>"] = { "<cmd> NvimTreeToggle <CR>", "   toggle nvimtree" },
 
 		-- focus
-		["<leader><leader>"] = { "<cmd> NvimTreeFocus <CR>", "   focus nvimtree" },
+		["<leader><leader>"] = { "<cmd> NvimTreeToggle <CR>", "   toggle nvimtree" },
 	},
 }
 
