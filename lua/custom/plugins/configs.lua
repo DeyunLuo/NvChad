@@ -25,7 +25,37 @@ M.nullls = {
 }
 
 M.vim_startify = {
-	require("custom.plugins.vim_startify"),
+	config = function()
+		require("custom.plugins.vim_startify")
+	end,
+}
+
+-- M.which_key = {
+-- 	config = function()
+-- 		require("which-key").setup({
+-- 			-- your configuration comes here
+-- 			-- or leave it empty to use the default settings
+-- 			-- refer to the configuration section below
+-- 		})
+-- 	end,
+-- }
+
+M.nvim_dap = {
+	-- after = "coq_nvim",
+	-- disable = not plugin_status.dap,
+	config = function()
+		require("custom.plugins.nvim_dap").setup()
+		-- require("custom.plugins.dap.go").setup()
+	end,
+	requires = {
+		"Pocco81/DAPInstall.nvim",
+		"rcarriga/nvim-dap-ui",
+		"mfussenegger/nvim-dap-python",
+		"leoluz/nvim-dap-go",
+    "sakhnik/nvim-gdb"
+		-- { "leoluz/nvim-dap-go", module = "dap-go" },
+		--"mfussenegger/nvim-dap-python", can be used instead of a config file for the Python adapter by requiring it where your config would be.
+	},
 }
 
 return M
