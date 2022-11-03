@@ -30,15 +30,11 @@ M.vim_startify = {
 	end,
 }
 
--- M.which_key = {
--- 	config = function()
--- 		require("which-key").setup({
--- 			-- your configuration comes here
--- 			-- or leave it empty to use the default settings
--- 			-- refer to the configuration section below
--- 		})
--- 	end,
--- }
+M.which_key = {
+	config = function()
+		require("custom.plugins.which_key").setup()
+	end,
+}
 
 M.nvim_dap = {
 	-- after = "coq_nvim",

@@ -21,7 +21,18 @@ M.general = {
 		["<S-l>"] = { "<C-w>l", " window right" },
 		["<S-j>"] = { "<C-w>j", " window down" },
 		["<S-k>"] = { "<C-w>k", " window up" },
+    ["<up>"] = {"<cmd> res -5 <CR>", "up resize -5"},
+    ["<down>"] = {"<cmd> res +5 <CR>", "down resize -5"},
+    ["<left>"] = {"<cmd> vertical resize-5 <CR>", "left resize -5"},
+    ["<right>"] = {"<cmd> vertical resize+5 <CR>", "right resize -5"},
 	},
+  t = {
+    ["<up>"] = {"<cmd> res -5 <CR>", "up resize -5"},
+    ["<down>"] = {"<cmd> res +5 <CR>", "down resize -5"},
+    ["<left>"] = {"<cmd> vertical resize-5 <CR>", "left resize -5"},
+    ["<right>"] = {"<cmd> vertical resize+5 <CR>", "right resize -5"},
+
+  }
 }
 
 M.nvimtree = {

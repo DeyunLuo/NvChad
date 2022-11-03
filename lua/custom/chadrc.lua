@@ -22,6 +22,8 @@ M.plugins = {
     ["neovim/nvim-lspconfig"] = plugin_confs.lspconfig,
     ["jose-elias-alvarez/null-ls.nvim"] = plugin_confs.nullls,
     ['mhinz/vim-startify'] = plugin_confs.vim_startify,
+    ["folke/which-key.nvim"] = plugin_confs.which_key,
+    ["mfussenegger/nvim-dap"] = plugin_confs.nvim_dap,
   }
 }
 
