@@ -6,15 +6,15 @@ local M = {}
 -- example of changing theme:
 
 M.ui = {
-  theme = "decay",
-  -- theme = "chadracula",
+	theme = "decay",
+	-- theme = "chadracula",
 }
 
-M.mappings = require "custom.mappings"
+M.mappings = require("custom.mappings")
 
-M.init = require "custom.init"
+M.init = require("custom.init")
 
-local plugin_confs = require "custom.plugins.configs"
+local plugin_confs = require("custom.plugins.configs")
 
 M.plugins = {
   user = {
